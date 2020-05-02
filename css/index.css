@@ -1,4 +1,167 @@
-/* Font in design files is Raleway */
-
-/* background-image in Design 👇
- url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg'); */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: Raleway;
+}
+header .nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .nav-items a {
+  font-size: larger;
+  font-family: Raleway;
+  border-right: 2px solid lightgray;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  padding: 1rem;
+}
+header .nav-items #active-item {
+  font-style: bold;
+}
+.title-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title-container .main-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-container img {
+  justify-content: center;
+  max-width: 80%;
+  align-content: center;
+}
+.text-cont {
+  display: block;
+  position: absolute;
+  width: 30%;
+}
+.text-cont h3 {
+  font-size: 60px;
+  font-style: bold;
+  color: white;
+  text-align: center;
+}
+.text-cont a {
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 30%;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: black;
+  background-color: white;
+}
+.artists-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.artists-container .artist {
+  border: 4px solid red;
+  width: 40%;
+  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+}
+.artists-container .artist img {
+  justify-content: center;
+  max-width: 60%;
+}
+.artists-container .artist a {
+  margin-right: 50%;
+  float: right;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
