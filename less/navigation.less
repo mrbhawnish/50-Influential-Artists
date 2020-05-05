@@ -14,8 +14,41 @@ header .nav-items{
 
         
     }
-    #active-item{
-        font-style: bold;
+}
 
+ header #active-item{
+     color: black;
+    font-style: bold;
+
+}
+
+//media-query for navigation
+@media (max-width: 500px) {
+       
+       header .nav-items {
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            justify-content: space-between;
+            font-size: 2rem;
+
+            a{
+                border-right: none;
+            }
     }
+}
+
+@media (max-width: 700px) {
+
+    header .nav-items {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-between;
+        font-size: 2rem;
+
+        a{
+            border-right: none;
+        }
+}
 }

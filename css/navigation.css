@@ -1,0 +1,16 @@
+header .nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .nav-items a {
+  font-size: larger;
+  font-family: Raleway;
+  border-right: 2px solid lightgray;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  padding: 1rem;
+}
+header .nav-items #active-item {
+  font-style: bold;
+}
