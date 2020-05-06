@@ -1,0 +1,28 @@
+//Regular mixins in here
+
+.flex-artist-container() {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   text-align: center;
+ }
+ 
+ .anchor-positioning(){
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 30%;
+  text-align: center;
+ }
+
+ //Parametric mixins below
+
+ .button-colors(@bg-color, @txt-color) {
+   background-color: @bg-color;
+   color: @txt-color;
+   }
+
+  .button-sizing-prop(@b-radius, @font-size, @padding){
+    border-radius: @b-radius;
+    font-size: @font-size;
+    padding: @padding;
+  }
