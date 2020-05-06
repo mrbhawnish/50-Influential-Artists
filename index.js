@@ -244,23 +244,34 @@ console.log(getArtistByIndex(artists[0].id, artists[0].name))
 * For example, if removeArtist is invoked with the data and the number 0,
 * it will remove Amedeo Modigliani from our dataset.
 */
-function removeArtist(id, name) {
+function removeArtist(array, i) {
 
+let removed = array.splice(i, 1);
 
+return removed;
 }
 
-console.log(removeArtist(0));
+removeArtist(artists, 1);
+
+
 
 /**
 
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(/* Code here */){
 
-  /* Code here */
 
+function lotsOfArt(array){
+   const newArray = [];
+   for (i = 0; i < array.length; i++){
+     if (artists[i].paintings > 100){
+       newArray.unshift(artists[i].name);
+     }
+   }
+    return newArray;
 }
+console.log(lotsOfArt(artists));
 
 
 /* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
@@ -271,12 +282,45 @@ years: Your Birth Year - current day,
 genre: Web Design, 
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
+/* function addArtist(info) {
+const me = { /* ... */ 
+/*artists.push(me)
+} */
 
-function addArtist(/* Code here */){
-
-  /* Code here */
-
+/*function addArtist(info){
+let array = [{
+"id": 21,
+"name": "Bhawnish", 
+"years": "18 octobre",
+"genre": "Web Design", 
+"nationality": "Indian",
+"bio": "LoremIpsum" }]; 
+ info = array;
+ artists.push(info);
+return info;
 }
+console.log(addArtist(artists));
+
+console.log(artists);
+*/
+
+
+function addArtist(info){
+let array = [{
+"id": info[0], 
+"name": info[1],
+"years": info[2],
+"genre": info[3], 
+"nationality": info[4],
+"bio": info[5] }] ; 
+
+info = array;
+artists.push(info);
+return info;
+}
+console.log(addArtist(['21', 'Bhawnish', '18 octobre', 'Web Design', 'Indian', 'LoremIpsum']));
+
+console.log(artists);
 
 
 
